@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* =Colors */
+/* =Base */
+body {
+  font-family: "Roboto";
+  color: #191716;
+  background-color: #F5F5F5;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#introText {
+  float:left;
+}
