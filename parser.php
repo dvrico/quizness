@@ -7,9 +7,12 @@
     else { $ext = ''; }
 
     if($ext) {
-      //parser goes here. Tests are below.
-      echo 'The file is a .' . $ext . '<br>';
-      echo $name;
+      //Parser
+      $file = file($_FILES['filename']['tmp_name']);
+      for($i=0; $i < count($file); $i++) {
+        //Convert data into 'flashcards' here
+        echo $file[$i] . '<br>';
+      }
     } else {
       echo $name . ' is not an accepted file type.';
     }
