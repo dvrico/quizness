@@ -1,4 +1,11 @@
 <?php
+echo <<<_END
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+_END;
 //-------Parse and display uploaded file------//
   if($_FILES) {
     $name = $_FILES['filename']['name'];
@@ -11,12 +18,12 @@
       $file = file($_FILES['filename']['tmp_name']);
       for($i=0; $i < count($file); $i++) {
         //Convert data into 'flashcards' here
+        //$question# = new Flashcard[question, answer];...?
         echo $file[$i] . '<br>';
       }
     } else {
       echo $name . ' is not an accepted file type.';
     }
-
   }
 
 //-------Or display input from second form-----//
@@ -28,4 +35,9 @@
     echo "Question 3: <br>" . $_POST['question3'] . "<br>";
     echo "Answer to 3: " . $_POST['answer3'] . "<br>";
   }
+
+echo <<<_END
+  </body>
+</html>
+_END;
 ?>
