@@ -12,3 +12,7 @@ body {
 #introText {
   float:left;
 }
+
+#qaForm {
+  display: none;
+}

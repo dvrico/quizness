@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Quizness</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css">
+    <title>Quizness</title>
   </head>
   <body>
     <h1>Quizness</h1>
@@ -11,7 +13,35 @@
       by hand or upload a .txt file, for your convienence. Review the quizzes
       or take them in a flashcard format.</p>
       <br>
-      <p><a href="qaForm.php">Get Started!</a></p>
+      <button type="button" onclick="document.getElementById('qaForm').style.display='block';">Get Started!</button>
+    </div>
+
+    <div id="qaForm">
+      <div>
+        <p>Input values directly...</p>
+        <form class="" action="parser.php" method="post">
+          <fieldset id="questions">
+            <legend>Questions</legend>
+            1.<input type="text" name="question1" value=""><br>
+            2.<input type="text" name="question2" value=""><br>
+            3.<input type="text" name="question3" value=""><br>
+          </fieldset>
+          <fieldset id="answers">
+            <legend>Answers</legend>
+            1.<input type="text" name="answer1" value=""><br>
+            2.<input type="text" name="answer2" value=""><br>
+            3.<input type="text" name="answer3" value=""><br>
+          </fieldset>
+          <input type="submit" value="Submit!"><br>
+        </form>
+      </div>
+      <div>
+        <p>...or upload a file</p>
+        <form method="post" action="parser.php" enctype="multipart/form-data">
+          <p>Select File: </p><input type="file" name="filename" size="3000"><br>
+          <input type="submit" value="Upload">
+        </form>
+      </div>
     </div>
   </body>
 </html>
