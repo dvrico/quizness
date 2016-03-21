@@ -1,18 +1,73 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 /* =Colors */
 /* =Base */
+
 body {
-  font-family: "Roboto";
-  color: #191716;
-  background-color: #F5F5F5;
+  background-color: #0079bf;
   margin-top: 50px;
   margin-left: 20px;
 }
 
-#introText {
-  float:left;
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 50px auto 50px auto;
+  text-align: center;
+  font-family: "Roboto";
 }
 
-#qaForm {
+.title {
+  color: #b6e2fc;
+  text-align: center;
+  font-size: 60px;
+}
+
+#intro-text {
+  background-color: #b6e2fc;
+  color: #4d4d4d;
+  margin: 10px 20%;
+  font-weight: bolder;
+  text-align: center;
+  border: 5px solid #4d4d4d;
+  border-radius: 25px;
+  padding: 5px 10px 0px 10px;
+}
+
+.ghost-button-container {
+  text-align: center;
+}
+
+.ghost-button {
+  font-family: "Roboto";
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  width: 200px;
+  padding: 8px;
+  color: #b6e2fc;
+  border: 2.5px solid #b6e2fc;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #b6e2fc;
+  color: #4d4d4d;
+}
+/*
+.ghost-button button {
+  background-color: #000;
+  font-family: "Roboto";
+  color: #000;
+  font-weight: bold;
+  border: 5px solid #000;
+  border-radius: 15px;
+  padding: 10px;
+}
+*/
+#qa-form {
   display: none;
 }

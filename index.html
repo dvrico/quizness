@@ -2,21 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Quizness</title>
   </head>
   <body>
-    <h1>Quizness</h1>
+    <div class="container"></div>
+    <h1 class="title">Quizness</h1>
 
-    <div id="introText">
-      <p>Quizness helps you make a quizzes fast and easy. Input all Q's and A's
-      by hand or upload a .txt file, for your convienence. Review the quizzes
-      or take them in a flashcard format.</p>
+    <div id="intro-text">
+      <p>Quizzness helps you make flashcards fast and easy. Input all Q's and A's
+      by hand or upload a .txt file, for your convienence. Review and edit flashcard packs, quiz yourself on them.</p>
       <br>
-      <button type="button" onclick="document.getElementById('qaForm').style.display='block';">Get Started!</button>
     </div>
-
-    <div id="qaForm">
+    <div class="ghost-button-container">
+      <a class="ghost-button" href="#" onclick="document.getElementById('qa-form').style.display='block';">Get Started!</a>
+    </div>
+    <div id="qa-form">
       <div>
         <p>Input values directly...</p>
         <form class="" action="parser.php" method="post">
