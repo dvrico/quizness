@@ -32,6 +32,7 @@
       <a class="ghost-button" href="#" onclick="document.getElementById('qa-form').style.display='block';">Get Started!</a>
     </div>
     <div id="qa-form">
+
       <div id="input-values-form">
         <p>Input values directly...</p>
         <form action="inputValues.php" method="post">
@@ -42,11 +43,12 @@
             <option value="10">Up to ten</option>
             <option value="15">Up to fifteen</option>
             <option value="25">Up to twenty-five</option>
-          </select>
+          </select><br><br>
           <input type="submit" value="Continue">
         </form>
 
-      <!--  <form class="" action="parser.php" method="post">
+      <!--  This should go in inputValues.php instead
+        <form class="" action="parser.php" method="post">
           <fieldset id="questions">
             <legend>Questions</legend>
             1.<input type="text" name="question1" value=""><br>
@@ -62,17 +64,19 @@
           <input type="submit" value="Submit!"><br>
         </form>
       !-->
-        <div class="helper-text">
-        </div>
       </div>
+
+      <div id="divider"></div>
 
       <div id="upload-form">
         <p>...or upload a file</p>
         <form method="post" action="parser.php" enctype="multipart/form-data">
-          <p>Select File: </p><input type="file" name="filename" size="3000"><br>
+          <p>Select File: </p><input type="file" name="filename" size="3000"><br><br>
           <input type="submit" value="Upload">
         </form>
-        <div class="helper-text">
+        <br><button onclick="document.getElementById('helper-text').style.display='block';">Formatting tips</button>
+
+        <div id="helper-text">
           <p>Only .txt files are accepted. For the parser to display the values correctly use this format in your .txt file:
             <pre>
             Q1: // first question goes here
@@ -90,6 +94,7 @@
             <li>The parser ignores empty lines. Feel free to use empty lines for organization.</li>
             <li>The parser also ignores any text after '//'.</li>
           </ul>
+          <button onclick="document.getElementById('helper-text').style.display='none';">GOT IT</button>
         </div>
       </div>
 

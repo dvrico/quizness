@@ -89,4 +89,60 @@ header li, a {
 */
 #qa-form {
   display: none;
+  font-family: "Roboto";
+  color: #b6e2fc;
+  margin-top: 50px;
+  position: relative;
+}
+ #input-values-form, #upload-form {
+  display: inline-block;
+ }
+
+#input-values-form {
+  position: absolute;
+  left: 10%;
+  top: 100px;
+  background-color: #b6e2fc;
+  color: #4d4d4d;
+  font-weight: bolder;
+  text-align: left;
+  border: 5px solid #4d4d4d;
+  border-radius: 25px;
+  padding: 5px 50px 10px 50px;
+  height: 191px;
+}
+
+#divider {
+  border: 3px solid #4d4d4d;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  height: 500px;
+}
+
+#upload-form {
+  position: absolute;
+  left: 57%;
+  top: 100px;
+  background-color: #b6e2fc;
+  color: #4d4d4d;
+  font-weight: bolder;
+  text-align: left;
+  border: 5px solid #4d4d4d;
+  border-radius: 25px;
+  padding: 5px 50px 10px 50px;
+}
+
+#helper-text {
+  display: none;
+  position:fixed;
+  left: 18%;
+  top: 20%;
+  background-color: #b6e2fc;
+  color: #4d4d4d;
+  font-weight: bolder;
+  text-align: left;
+  border: 5px solid #4d4d4d;
+  border-radius: 25px;
+  padding: 5px 50px 10px 50px;
 }
