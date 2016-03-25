@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Quizness</title>
   </head>
@@ -21,17 +22,28 @@
         </ul>
       </div>
     </header>
-    <h1 class="title">Quizness</h1>
 
-    <div id="intro-text">
-      <p>Quizzness helps you make flashcards fast and easy. Input all Q's and A's
-      by hand or upload a .txt file with ease. Create, review, and edit flashcard packs or quiz yourself on them.</p>
-      <br>
+    <div id="panel-one">
+      <h1 class="title">Quizness</h1>
+
+      <div id="intro-text">
+        <p>Quizzness helps you make flashcards fast and easy. Input all Q's and A's
+        by hand or upload a .txt file with ease. Create, review, and edit flashcard packs or quiz yourself on them.</p>
+        <br>
+      </div>
+      <div class="ghost-button-container">
+        <a class="ghost-button" href="#" onclick="show()">Get Started!</a>
+      </div>
+
     </div>
-    <div class="ghost-button-container">
-      <a class="ghost-button" href="#" onclick="document.getElementById('qa-form').style.display='block';">Get Started!</a>
-    </div>
-    <div id="qa-form">
+    <script>
+      function show() {
+        document.getElementById('qa-form').style.display='block';
+        document.getElementById('panel-one').style.display='none';
+      }
+    </script>
+
+    <div id="qa-form" class="animated bounceInUp">
 
       <div id="input-values-form">
         <p>Input values directly...</p>
